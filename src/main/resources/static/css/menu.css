@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: outfit, sans-serif;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #404040;
+    display: flex;
+    height: 100vh;
+    background-color: brown;
+    background-image: url(/assets/img/imagen.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    flex-direction: column;
+}
+
+header.top-bar {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(34, 45, 100);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header.top-bar .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header.top-bar .top-nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header.top-bar .top-nav a:hover {
+    color: rgb(226, 41, 143);
+}
+
+nav.Menu_lateral {
+    width: 80px;
+    height: 100%;
+    background-color: rgb(51, 97, 247);
+    padding: 40px 0% 40px 1%;
+    box-shadow: 3px 0 0 rgb(226, 41, 143);
+    position: fixed;
+    top: 60px; 
+    left: 0;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+nav.Menu_lateral:hover {
+    width: 300px;
+}
+
+.butao_expandir_menu {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.butao_expandir_menu > i {
+    color: aliceblue;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.itemMenu {
+    transition: 0.2s;
+}
+
+ul li.ativo {
+    background-color: rgb(226, 41, 143);
+}
+
+ul li.itemMenu:hover {
+    background: rgb(226, 41, 143);
+}
+
+ul li.itemMenu a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.itemMenu a .txt-link {
+    margin-left: 30px;
+}
+
+ul li.itemMenu a .Icon > i {
+    font-size: 30px;
+    margin-left: 10px;
+}

@@ -1,4 +1,11 @@
+gg:
+  jte:
+    development-mode: true
+    template-location: src/main/jte
+
+
 spring:
+ 
   h2:
     console:
       enabled: true
@@ -12,3 +19,7 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: update
+
+server:
+  port: 8081
+
