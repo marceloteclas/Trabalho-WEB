@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    overflow: hidden; 
+}
+
+body {
+    background-image: url(/assets/img/Background.png);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+}
+.title2{
+    color: blue;
+}
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    width: 2400px;
+    text-align: center;
+   }
+
+
+.profissionais-container {
+    background-color: white;
+    width: 50%; 
+    height:auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; 
+    margin-top: 100px;
+    padding: 40px;
+    font-weight: bold;
+    
+}
+th{
+    font-weight: bold;
+    font-size: 20px;
+    width: 230px;
+    height: auto;
+    background-color: white;
+    color:blue;
+    border: 2px solid black;
+}   
+td{
+    font-weight: bold;
+    color: blue;
+    border: 2px solid black;
+    width: 140px;
+}
+#tabela-profissionais {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+#tabela-profissionais tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#tabela-profissionais tr:hover {
+    background-color: #f1f1f1;
+}
+
+.botoes-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    margin-top: 100px;
+    width: 160px;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.button1 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.button1 input {
+    width: auto;
+    padding: 12px;
+    background-image: linear-gradient(#0587f8, #404040);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.button1 input:hover {
+    background: linear-gradient(135deg, #5a98ce, #8d3ea8);
+}
+
+
+.icon-top {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.icon-top img {
+    margin-top: 80px;
+    width: 100px;
+    height: auto;
+}
+
+.icon-right {
+    margin-top: 80px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.icon-right img {
+    width: 200px;
+    height: auto;
+}
+
