@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="/css/login.css">
+<<<<<<< HEAD
         <link rel="stylesheet" th:href="@{/css/cadastroProfissional.css}">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
+=======
+>>>>>>> 90044438d3d453fdea9177c8b73385a9af24d4ac
 
 </head>
 <body>
@@ -44,6 +47,10 @@
             <button>Entrar</button>
         
             <p>Não tem cadastro?<a href="/cadastro">Clique aqui!</a></p>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 90044438d3d453fdea9177c8b73385a9af24d4ac
         </form>
 
         <!-- Imagem -->

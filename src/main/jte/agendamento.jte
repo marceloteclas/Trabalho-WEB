@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/agendamento.css">
+<<<<<<< HEAD
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
    
+=======
+>>>>>>> 90044438d3d453fdea9177c8b73385a9af24d4ac
     <title>Agendamento</title>
 </head>
 <body>
@@ -13,7 +16,11 @@
         <img src="/assets/img/icon.png" alt="">
     </div>
     <div class="icon-right">
+<<<<<<< HEAD
         <img src="resources/static/assets/img/icon2.png" alt="">
+=======
+        <img src="/assets/img/icon2.png" alt="">
+>>>>>>> 90044438d3d453fdea9177c8b73385a9af24d4ac
     </div>
     <header>
     <div class="title">AGENDAR CONSULTA</div>
