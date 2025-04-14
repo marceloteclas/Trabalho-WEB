@@ -17,35 +17,40 @@ import lombok.Data;
 @AllArgsConstructor
 @Table(name="profissional")
 public class ProfissionalEntity {
-@Id
-@GeneratedValue(strategy = GenerationType.AUTO)
-private Long idProfissional;
+    
+    public ProfissionalEntity() {
+        // Construtor padrão necessário para frameworks e instância manual
+    }
 
-@NotBlank
-@Column(nullable=false)
-private String name;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long idProfissional;
 
-@Column(name="especialidade",nullable = false)
-private String especialidade;
+    @NotBlank
+    @Column(nullable=false)
+    private String name;
 
-@NotBlank
-@Column(length = 10)
-private String telefone;
+    @Column(name="especialidade",nullable = false)
+    private String especialidade;
 
-@NotBlank
-@Column(name="senha",nullable = false)
-private String senha;
+    @NotBlank
+    @Column(length = 10)
+    private String telefone;
 
-@Column(name="cns",nullable = false)
-private int cns;
-    @Pattern(regexp = "\\d{11}")
-    @Column(nullable = false, length = 11)
-    private String cpf;
+    @NotBlank
+    @Column(name="senha",nullable = false)
+    private String senha;
 
-@Column(name="data_nascimento",nullable = false)
-private String dataNascimento;
+    @Column(name="cns",nullable = false)
+    private int cns;
+        @Pattern(regexp = "\\d{11}")
+        @Column(nullable = false, length = 11)
+        private String cpf;
 
-@Email
-@Column(name = "email", nullable = false)
-private String email;
+    @Column(name="data_nascimento",nullable = false)
+    private String dataNascimento;
+
+    @Email
+    @Column(name = "email", nullable = false)
+    private String email;
 }

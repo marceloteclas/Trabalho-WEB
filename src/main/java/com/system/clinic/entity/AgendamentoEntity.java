@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -46,12 +47,5 @@ public class AgendamentoEntity {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private StatusConsulta status = StatusConsulta.AGENDADA;
-}
-
-enum StatusConsulta {
-    AGENDADA,
-    CONFIRMADA,
-    CANCELADA,
-    REALIZADA
+    private StatusAgendamento status = StatusAgendamento.AGENDADA;
 }

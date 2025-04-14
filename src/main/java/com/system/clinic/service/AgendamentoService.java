@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import com.system.clinic.dto.AgendamentoDTO;
 
 @Service
-public interface ConsultaService {
+public interface AgendamentoService {
 
 AgendamentoDTO buscarConsultaPorId(Long idConsulta);
 List<AgendamentoDTO> listarConsultas();
