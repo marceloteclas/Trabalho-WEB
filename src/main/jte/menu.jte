@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="/css/menu.css">
-<<<<<<< HEAD
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
-=======
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
->>>>>>> 90044438d3d453fdea9177c8b73385a9af24d4ac
 </head>
 <body>
         
