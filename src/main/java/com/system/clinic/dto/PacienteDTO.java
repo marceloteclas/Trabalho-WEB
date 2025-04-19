@@ -9,10 +9,10 @@ import lombok.Data;
 @AllArgsConstructor
 public class PacienteDTO {
     
-    private Long idPaciente;
+    private Long id;
 
     @NotBlank
-    private String name;
+    private String nome;
 
     @NotNull
     private LocalDate dataNascimento;
@@ -34,6 +34,9 @@ public class PacienteDTO {
 
     @NotBlank
     private String cpf;
+
+    @NotBlank
+    private String email;
 
     @NotBlank
     private String cep;
