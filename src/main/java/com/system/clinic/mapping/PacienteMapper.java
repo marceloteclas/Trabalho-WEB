@@ -8,5 +8,5 @@ import org.mapstruct.Mapper;
 @Mapper(componentModel = "spring")
 public abstract class PacienteMapper {
     public abstract PacienteEntity toEntity(PacienteDTO source);
-    public abstract PacienteDTO tDto(PacienteEntity source);
+    public abstract PacienteDTO toDto(PacienteEntity source);
 }
