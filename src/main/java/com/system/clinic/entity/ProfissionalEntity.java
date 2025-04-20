@@ -24,7 +24,7 @@ public class ProfissionalEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long idProfissional;
+    private Long id;
 
     @NotBlank
     @Column(nullable=false)

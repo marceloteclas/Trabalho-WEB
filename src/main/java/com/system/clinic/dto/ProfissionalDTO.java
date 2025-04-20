@@ -11,7 +11,7 @@ import lombok.Data;
 @AllArgsConstructor
 public class ProfissionalDTO {
 
-    private Long idProfissional;
+    private Long id;
 
     @NotBlank
     private String name;
