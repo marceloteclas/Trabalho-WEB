@@ -24,11 +24,11 @@ public class ProfissionalEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long idProfissional;
+    private Long id;
 
     @NotBlank
     @Column(nullable=false)
-    private String name;
+    private String nome;
 
     @Column(name="especialidade",nullable = false)
     private String especialidade;
