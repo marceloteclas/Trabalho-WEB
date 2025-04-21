@@ -43,7 +43,7 @@
         
             <button>Entrar</button>
         
-            <p>Não tem cadastro? <a href="/cadastro">Clique aqui!</a></p>
+            <p>Não tem cadastro? <a href="/cadastro"> Clique aqui!</a></p>
         </form>
 
         <!-- Imagem -->

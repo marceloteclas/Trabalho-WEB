@@ -42,7 +42,7 @@
 
             <button>Salvar</button>
 
-              <p>Voltar a tela de Login?<a href="/login">Clique aqui!</a></p>
+              <p>Voltar a tela de Login? <a href="/login"> Clique aqui!</a></p>
 
         </form>
 
