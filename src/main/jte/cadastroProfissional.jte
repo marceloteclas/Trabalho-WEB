@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/cadastroProfissional.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/cadastroProfissional.css">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
     <title>Cadastro de Profissional</title>
 </head>
 <body>
     <main>
-        <div class="container">
-            <div class="form-img">
-                <img class="img1" src="assets/img/Phisiotherapy-amico 1.png" alt="">
-            </div>
+    <div class="container">
+        <div class="form-img">
+            <img class="img1" src="assets/img/Phisiotherapy-amico 1.png" alt="">
+        </div>
+
             <div class="form-container">
                 <h1 class="title">Cadastre-se</h1>
+                
                 <form action="#" class="formulario">
                     <label for="nome">Nome Completo:</label>
                     <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
@@ -46,10 +49,12 @@
                         <option value="psiquiatra">Psiquiatra</option>
                     </select>
                     <p>Usuário já cadastrado?<a href="/login">Faça login</a></p>
+                    
+
                     <div class="buttons-container">
                         <input type="button" class="btn-voltar" value="Voltar" onclick="window.location.href='/menu'">
                         <input type="submit" class="btn-cadastrar" value="Cadastrar">
-                    </div>
+           </div>
                 </form>
             </div>
         </div>

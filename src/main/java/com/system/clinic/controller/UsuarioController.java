@@ -8,9 +8,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class UsuarioController {
 
-    @GetMapping("/")
-    public String home() {
-        return "redirect:/login";
+    @PostMapping("/login")
+    public String fazerLogin(@RequestParam String Usuario, @RequestParam String Senha) {
+
+        if ("admin".equals(Usuario) && "123".equals(Senha)) {
+            return "redirect:/menu";
+        } else {
+            return "redirect:/login?erro=true";
+        }
     }
 
     @GetMapping("/login")
@@ -20,22 +25,6 @@ public class UsuarioController {
 
     @GetMapping("/cadastro")
     public String cadastro() {
-        return "redirect:/cadastro";
+        return "cadastro";
     }
-
-    @GetMapping("/teste")
-    public String testar() {
-        return "teste";
-    }
-
-    @PostMapping("/login")
-    public String fazerLogin(@RequestParam String usuario, @RequestParam String senha) {
-
-        if ("admin".equals(usuario) && "123".equals(senha)) {
-            return "redirect:/menu";
-        } else {
-            return "redirect:/login?erro=true";
-        }
-    }
- 
 }

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="/css/login.css">
-    <link rel="stylesheet" th:href="@{/css/cadastroProfissional.css}">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <link rel="stylesheet" th:href="@{/css/cadastroProfissional.css}">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
 
 
 </head>
@@ -27,13 +27,13 @@
             </div>   
             
             <div class="espaco-input">
-                <label for="usuario">Usuário*</label>
-                <input type="text" id="usuario" name="usuario" placeholder="Digite seu mome de usuário" required /> 
+                <label for="Usuario">Usuario*</label>
+                <input type="text" id="Usuario" name="Usuario" placeholder="Digite seu Usuario" required /> 
             </div>
         
             <div class="espaco-input">
-                <label for="senha">Senha*</label>
-                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required />
+                <label for="Senha">Senha*</label>
+                <input type="password" id="Senha" name="Senha" placeholder="Digite sua senha" required />
             </div>
         
             <div class="lembrar-me">
@@ -43,7 +43,7 @@
         
             <button>Entrar</button>
         
-            <p>Não tem cadastro? <a href="/cadastro"> Clique aqui!</a></p>
+            <p>Não tem cadastro?<a href="/cadastro">Clique aqui!</a></p>
         </form>
 
         <!-- Imagem -->
@@ -58,3 +58,4 @@
     </div>
 </body>
 </html>
+
