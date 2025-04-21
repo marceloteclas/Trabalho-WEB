@@ -10,4 +10,3 @@ public abstract class ProfissionalMapper {
     public abstract ProfissionalEntity toEntity(ProfissionalDTO source);
     public abstract ProfissionalDTO tDto(ProfissionalEntity source);
 }
-

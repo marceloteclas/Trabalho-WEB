@@ -14,7 +14,7 @@ public class ProfissionalDTO {
     private Long id;
 
     @NotBlank
-    private String nome;
+    private String name;
 
     @NotNull
     private LocalDate dataNascimento;

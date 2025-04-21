@@ -1,8 +1,11 @@
 package com.system.clinic.entity;
 
-public enum StatusAgendamento {
-    AGENDADA,
-    CONFIRMADA,
-    CANCELADA,
-    REALIZADA
+public class StatusAgendamento {
+
+    public enum Status {
+        AGENDADA,
+        CONFIRMADA,
+        CANCELADA,
+        REALIZADA
+    }
 }

@@ -9,6 +9,8 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+import com.system.clinic.entity.StatusAgendamento.Status;;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -47,5 +49,5 @@ public class AgendamentoEntity {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private StatusAgendamento status = StatusAgendamento.AGENDADA;
+    private Status status = Status.AGENDADA;
 }

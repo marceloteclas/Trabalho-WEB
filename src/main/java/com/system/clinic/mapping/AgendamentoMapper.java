@@ -11,23 +11,23 @@ import org.mapstruct.Mapping;
 @Mapper(componentModel = "spring")
 public abstract class AgendamentoMapper {
     
-    @Mapping(target = "paciente", expression = "java(mapPaciente(source.getPacienteId()))")
-    @Mapping(target = "profissional", expression = "java(mapProfissional(source.getProfissionalId()))")
+    @Mapping(target = "paciente", expression = "java(mapPaciente(source.getId()))")
+    @Mapping(target = "profissional", expression = "java(mapProfissional(source.getId()))")
     public abstract AgendamentoEntity mapToAgendamentoEntity(AgendamentoDTO source);
 
     @Mapping(target = "pacienteId", source = "paciente.id")
     @Mapping(target = "profissionalId", source = "profissional.id")
     public abstract AgendamentoDTO mapToAgendamentoDTO(AgendamentoEntity source);
 
-    protected PacienteEntity mapPaciente(Long pacienteId) {
+    protected PacienteEntity mapPaciente(Long id) {
         PacienteEntity paciente = new PacienteEntity();
-        paciente.setId(pacienteId);
+        paciente.setId(id);
         return paciente;
     }
 
-    protected ProfissionalEntity mapProfissional(Long profissionalId) {
+    protected ProfissionalEntity mapProfissional(Long id) {
         ProfissionalEntity profissional = new ProfissionalEntity();
-        profissional.setId(profissionalId);
+        profissional.setId(id);
         return profissional;
     }
 }

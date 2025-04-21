@@ -28,7 +28,7 @@ public class ProfissionalEntity {
 
     @NotBlank
     @Column(nullable=false)
-    private String nome;
+    private String name;
 
     @Column(name="especialidade",nullable = false)
     private String especialidade;
