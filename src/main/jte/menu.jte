@@ -21,7 +21,7 @@
 
     
     <nav class="Menu_lateral">
-        <div class="botao_expandir_menu">
+        <div class="butao_expandir_menu">
             <i class="bi bi-list"></i>
         </div>
         <ul>
@@ -32,7 +32,7 @@
                 </a>
             </li>
             <li class="itemMenu">
-                <a href="/cadastroPessoa">
+                <a href="cadastroPessoa">
                     <span class="Icon"><i class="bi bi-file-person"></i></span>
                     <span class="txt-link">Cadastro Pessoa</span>
                 </a>
