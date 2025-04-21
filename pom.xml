@@ -11,8 +11,8 @@
 	<groupId>ifba.saj.demo</groupId>
 	<artifactId>petshop</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>clinica</name>
-	<description>Agendar Atendimento</description>
+	<name>petshop</name>
+	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -109,7 +109,7 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		</dependencies>
+	</dependencies>
 
 	<build>
 		<plugins>
