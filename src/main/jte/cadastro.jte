@@ -16,9 +16,7 @@
 
     <div class="CadastroContainer">
 
-       
-
-            <form action="" class="Formulario">
+        <form action="" class="Formulario">
 
             <div class="TituloCad">
                 <h1>Cadastro</h1>
@@ -46,16 +44,20 @@
 
         </form>
 
-         <!-- Imagem -->
-         <div class="image-section2">
+        <!-- Imagem -->
+        <div class="image-section2">
+
             <div class="alinharSegundaParte">
+
                 <div>
-                <h2>Seja Bem-Vindo</h2>
-                <img src="/assets/img/tel.png" alt="Imagem de login">
+                    <h2>Seja Bem-Vindo</h2>
+                    <img src="/assets/img/tel.png" alt="Imagem de login">
+                </div>
+
             </div>
+
         </div>
-    </div>
-       
+
     </div>
     
 </body>

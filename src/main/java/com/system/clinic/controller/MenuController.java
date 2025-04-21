@@ -8,7 +8,7 @@ public class MenuController {
 
     @GetMapping("/menu")
     public String mostrarMenu() {
-        return "menu"; // JTE procura automaticamente por home.jte
+        return "index"; // JTE procura automaticamente por home.jte
     }
 
     @GetMapping("/cadastroPessoa")
