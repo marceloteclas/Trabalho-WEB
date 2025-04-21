@@ -19,7 +19,6 @@
             <th>Nome</th>
             <th>Especialidade</th>
             <th>Telefone</th>
-            <th>Senha</th>
             <th>Cns</th>
             <th>Cpf</th>
             <th>DataNascimento</th>
@@ -36,7 +35,6 @@
                 <td>${profissional.getNome()}</td>
                 <td>${profissional.getEspecialidade()}</td>
                 <td>${profissional.getTelefone()}</td>
-                <td>${profissional.getSenha()}</td>
                 <td>${profissional.getCns()}</td>
                 <td>${profissional.getDataNascimento()}</td>
                 <td>${profissional.getEmail()}</td>

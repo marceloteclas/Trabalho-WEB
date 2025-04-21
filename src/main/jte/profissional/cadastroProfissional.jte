@@ -45,7 +45,7 @@
                         <option value="pediatra">Pediatra</option>
                         <option value="psiquiatra">Psiquiatra</option>
                     </select>
-                    <p>Usuário já cadastrado?<a href="/login">Faça login</a></p>
+                    <p>Usuário já cadastrado? <a href="/login">Faça login</a></p>
                     <div class="buttons-container">
                         <input type="button" class="btn-voltar" value="Voltar" onclick="window.location.href='/menu'">
                         <input type="submit" class="btn-cadastrar" value="Cadastrar">

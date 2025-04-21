@@ -16,7 +16,7 @@ public abstract class AgendamentoMapper {
     public abstract AgendamentoEntity mapToAgendamentoEntity(AgendamentoDTO source);
 
     @Mapping(target = "pacienteId", source = "paciente.id")
-    @Mapping(target = "profissionalId", source = "profissional.idProfissional")
+    @Mapping(target = "profissionalId", source = "profissional.id")
     public abstract AgendamentoDTO mapToAgendamentoDTO(AgendamentoEntity source);
 
     protected PacienteEntity mapPaciente(Long pacienteId) {
@@ -27,7 +27,7 @@ public abstract class AgendamentoMapper {
 
     protected ProfissionalEntity mapProfissional(Long profissionalId) {
         ProfissionalEntity profissional = new ProfissionalEntity();
-        profissional.setIdProfissional(profissionalId);
+        profissional.setId(profissionalId);
         return profissional;
     }
 }

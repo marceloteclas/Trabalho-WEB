@@ -1,5 +1,3 @@
-@param boolean logado
-
 <header class="header">
     <div class="container">
         <div class="header-logo">
