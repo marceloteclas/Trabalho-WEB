@@ -22,9 +22,13 @@ public class ProfissionalController {
 
     @GetMapping("/listarProfissional")
     public String listarProfissional(Model model) {
-        List<ProfissionalDTO> profissionais = profissionalService.findAll(); // ou o método que você tiver
+        List<ProfissionalDTO> profissionais = profissionalService.findAll();
         model.addAttribute("profissionais", profissionais);
         return "profissional/lista_profissionais";
     }
 
+    @GetMapping("/cadastroProfissional")
+    public String cadastroProfissional() {
+        return "profissional/cadastroProfissional";
+    }
 }

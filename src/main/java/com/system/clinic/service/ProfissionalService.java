@@ -1,6 +1,5 @@
 package com.system.clinic.service;
 
-
 import java.util.List;
 
 import org.springframework.stereotype.Service;

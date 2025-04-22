@@ -1,5 +1,6 @@
 package com.system.clinic.dto;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -40,5 +41,9 @@ public class PacienteDTO {
 
     @NotBlank
     private String cep;
+
+    public String getDataNascimentoFormatada() {
+        return dataNascimento.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+    }
 
 }

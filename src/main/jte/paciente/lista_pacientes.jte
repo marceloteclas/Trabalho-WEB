@@ -15,7 +15,7 @@
         <button type="submit">Buscar</button>
     </form>
 
-    <a href="/paciente/cadastrar" class="btn-cadastrar">+ Cadastrar Paciente</a>
+    <a href="/cadastroPaciente" class="btn-cadastrar">+ Cadastrar Paciente</a>
 
     <table class="tabela">
         <thead>
@@ -35,24 +35,28 @@
         </thead>
 
         <tbody>
-        @for(var paciente : pacientes)
-            <tr>
-                <td>${paciente.getId()}</td>
-                <td>${paciente.getNome()}</td>
-                <td>${paciente.getDataNascimento()}</td>
-                <td>${paciente.getSexo()}</td>
-                <td>${paciente.getCpf()}</td>
-                <td>${paciente.getEmail()}</td>
-                <td>${paciente.getCns()}</td>
-                <td>${paciente.getTelefone()}</td>
-                <td>${paciente.getMunicipio()}</td>
-                <td>${paciente.getCpf()}</td>
-                <td>
-                    <a href="/paciente/editar/${paciente.getId()}" class="btn-editar">Editar</a>
-                    <a href="/paciente/ver/${paciente.getId()}" class="btn-editar">Ver</a>
-                </td>
-            </tr>
-        @endfor
+        @if(pacientes != null) 
+            @for(var paciente : pacientes)
+                <tr>
+                    <td>${paciente.getId()}</td>
+                    <td>${paciente.getNome()}</td>
+                    <td>${paciente.getDataNascimentoFormatada()}</td>
+                    <td>${paciente.getSexo()}</td>
+                    <td>${paciente.getCpf()}</td>
+                    <td>${paciente.getEmail()}</td>
+                    <td>${paciente.getCns()}</td>
+                    <td>${paciente.getTelefone()}</td>
+                    <td>${paciente.getMunicipio()}</td>
+                    <td>${paciente.getCpf()}</td>
+                    <td>
+                        <a href="/paciente/editar/${paciente.getId()}" class="btn-editar">Editar</a>
+                        <a href="/paciente/ver/${paciente.getId()}" class="btn-editar">Ver</a>
+                    </td>
+                </tr>
+            @endfor
+        @else
+            <tr><td colspan="8">Nenhum paciente encontrado.</td></tr> 
+        @endif
         </tbody>
     </table>
 `)

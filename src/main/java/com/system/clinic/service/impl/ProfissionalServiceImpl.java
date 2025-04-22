@@ -4,7 +4,6 @@ import com.system.clinic.dto.ProfissionalDTO;
 import com.system.clinic.service.ProfissionalService;
 import com.system.clinic.entity.ProfissionalEntity;
 import com.system.clinic.repository.ProfissionalRepository;
-//import com.system.clinic.service.ProfissionalService;
 import com.system.clinic.mapping.ProfissionalMapper;
 
 import org.springframework.stereotype.Service;

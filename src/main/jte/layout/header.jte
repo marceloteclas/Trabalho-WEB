@@ -8,8 +8,8 @@
         <nav class="header-nav">
             <ul id="header-nav">
                 <li><a href="/menu">Home</a></li>
-                <li><a href="/cadastroPessoa">Cadastrar Pacientes</a></li>
-                <li><a href="/listarPessoa">Listar Pacientes</a></li>
+                <li><a href="/cadastroPaciente">Cadastrar Pacientes</a></li>
+                <li><a href="/listarPaciente">Listar Pacientes</a></li>
                 <li><a href="/agendamento">Marcar <br> Agendamento</a></li>
                 <li><a href="/listarAgendamento">Listar Agendamento</a></li>
                 <li><a href="/listarProfissional">Profissionais</a></li>
