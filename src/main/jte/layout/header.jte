@@ -10,7 +10,7 @@
                 <li><a href="/menu">Home</a></li>
                 <li><a href="/cadastroPessoa">Cadastrar Pacientes</a></li>
                 <li><a href="/listarPessoa">Listar Pacientes</a></li>
-                <li><a href="/agendamento">Marcar Agendamento</a></li>
+                <li><a href="/agendamento">Marcar <br> Agendamento</a></li>
                 <li><a href="/listarAgendamento">Listar Agendamento</a></li>
                 <li><a href="/cadastroProfissional">Cadastrar Profissionais</a></li>
                 <li><a href="/listarProfissional">Listar Profissionais</a></li>
