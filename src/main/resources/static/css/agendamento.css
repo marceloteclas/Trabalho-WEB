@@ -1,13 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    overflow: hidden; 
-}
 
 body {
     background-image: url(/assets/img/Background.png);
@@ -61,7 +51,7 @@ main {
     font-size: 20px;
 }
 
-.form-container input {
+.agendamento-form-container input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -69,25 +59,25 @@ main {
     font-size: 14px;
 }
 
-.image-container {
+.agendamento-image-container {
     width: 48%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.image-container img {
+.agendamento-image-container img {
     max-width: 100%;
     height: auto;
 }
 
-.button1 {
+.agendamento-button1 {
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
 }
 
-.btn {
+.agendamento-btn {
     align-self: center;
     background-color: #007bff;
     color: white;
@@ -100,11 +90,11 @@ main {
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.agendamento-btn:hover {
     background-color: #0056b3;
 }
 
-.button1 input {
+.agendamento-button1 input {
     width: 12%;
     padding: 10px;
     background-image: linear-gradient(#0587f8, #404040);
@@ -117,36 +107,36 @@ main {
     transition: 0.3s;
 }
 
-.button1 input:hover {
+.agendamento-button1 input:hover {
     background: linear-gradient(135deg, #5a98ce, #8d3ea8);
 }
 
 
-.icon-top {
+.agendamento-icon-top {
     position: absolute;
     top: 10px;
     left: 10px;
 }
 
-.icon-top img {
+.agendamento-icon-top img {
     margin-top: 80px;
     width: 100px;
     height: auto;
 }
 
-.icon-right {
+.agendamento-icon-right {
     margin-top: 80px;
     position: absolute;
     top: 10px;
     right: 10px;
 }
 
-.icon-right img {
+.agendamento-icon-right img {
     width: 200px;
     height: auto;
 }
 
-select {
+.agendamento-select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -156,7 +146,7 @@ select {
     cursor: pointer;
 }
 
-select:focus {
+.agendamento-select:focus {
     outline: none;
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
@@ -174,8 +164,8 @@ select:focus {
         width: 90%;
     }
 
-    .icon-top img,
-    .icon-right img {
+    .agendamento-icon-top img,
+    .agendamento-icon-right img {
         width: 80px;
     }
 }

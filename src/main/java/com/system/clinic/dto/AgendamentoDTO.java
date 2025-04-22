@@ -8,7 +8,7 @@ import com.system.clinic.entity.StatusAgendamento.Status;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-
+import java.time.format.DateTimeFormatter;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -39,4 +39,17 @@ public class AgendamentoDTO {
     private String cns;
     
     private Status status;
+
+    // Métodos auxiliares para exibição no JTE
+    public String getDataConsultaFormatada() {
+        return dataConsulta != null ? dataConsulta.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")) : "";
+    }
+
+    public String getHoraConsultaFormatada() {
+        return horaConsulta != null ? horaConsulta.format(DateTimeFormatter.ofPattern("HH:mm")) : "";
+    }
+
+    public String getStatusTexto() {
+        return status != null ? status.name() : "";
+    }
 }

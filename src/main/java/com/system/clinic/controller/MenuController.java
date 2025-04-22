@@ -11,13 +11,13 @@ public class MenuController {
         return "index";
     }
 
-    @GetMapping("/agendamento")
+    /*@GetMapping("/agendamento")
     public String agendamento() {
-        return "agendamento/form_cadastro_consulta";
+        return "agendamento/agendamento";
     }
 
     @GetMapping("/listarAgendamento")
     public String listarAgendamento() {
         return "agendamento/lista_consultas";
-    }
+    }*/
 }

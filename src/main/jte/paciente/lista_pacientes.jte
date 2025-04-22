@@ -12,7 +12,7 @@
     <form method="get" action="/paciente" class="form-busca-paciente">
         <label for="nome">CPF:</label>
         <input type="text" id="cpf" name="cpf" pattern="[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}">
-        <button type="submit">Buscar</button>
+        <button type="paciente-submit">Buscar</button>
     </form>
 
     <a href="/cadastroPaciente" class="btn-cadastrar">+ Cadastrar Paciente</a>
