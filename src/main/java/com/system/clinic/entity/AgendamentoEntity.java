@@ -39,7 +39,7 @@ public class AgendamentoEntity {
 
     @Column(name = "Especialidade", nullable = false)
     private String especialidade;
-    
+
     @Column(name = "hora_consulta", nullable = false)
     private LocalTime horaConsulta;
 

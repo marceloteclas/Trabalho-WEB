@@ -12,7 +12,7 @@
     <main>
     <div class="container">
         <div class="form-img">
-            <img class="img1" src="assets/img/Phisiotherapy-amico 1.png" alt="">
+            <img class="img1" src="/img/Phisiotherapy-amico 1.png" alt="">
         </div>
 
             <div class="form-container">
@@ -52,7 +52,7 @@
                     
 
                     <div class="buttons-container">
-                        <input type="button" class="btn-voltar" value="Voltar" onclick="window.location.href='/menu'">
+                        <input type="button" class="btn-voltar" value="Voltar" onclick="window.location.href='/home'">
                         <input type="submit" class="btn-cadastrar" value="Cadastrar">
            </div>
                 </form>

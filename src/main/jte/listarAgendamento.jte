@@ -9,10 +9,10 @@
 </head>
 <body>
     <div class="icon-top">
-        <img src="/assets/img/icon.png" alt="">  
+        <img src="/img/icon.png" alt="">  
     </div>
     <div class="icon-right">
-        <img src="/assets/img/lista.png" alt="">
+        <img src="/img/lista.png" alt="">
     </div>
 
     <header>
@@ -88,7 +88,7 @@
 
             <button class="btn" onclick="adicionarAgendamento()">Adicionar Consulta</button>
             <div class="button1">
-                 <input type="button" value="Voltar" onclick="window.location.href='/menu'">
+                 <input type="button" value="Voltar" onclick="window.location.href='/home'">
             </div>
         </div> 
         

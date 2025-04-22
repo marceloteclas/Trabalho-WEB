@@ -4,10 +4,11 @@ import jakarta.validation.constraints.*;
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import com.system.clinic.entity.StatusAgendamento.Status;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+
+import com.system.clinic.entity.StatusAgendamento.Status;
 
 @Data
 @AllArgsConstructor
@@ -37,6 +38,6 @@ public class AgendamentoDTO {
     @NotBlank
     @Pattern(regexp = "\\d{15}", message = "CNS deve conter 15 dígitos")
     private String cns;
-    
+
     private Status status;
 }

@@ -10,7 +10,7 @@
 <body>
 
     <div class="alinharItem">
-        <img src="/assets/img/icon.png" alt="Imagem Ícone">
+        <img src="/img/icon.png" alt="Imagem Ícone">
     </div>
     
     <div class="container">
@@ -81,7 +81,7 @@
             </div>
 
             <div class="button1">
-                 <input type="button" value="Voltar" onclick="window.location.href='/menu'">
+                 <input type="button" value="Voltar" onclick="window.location.href='/home'">
             </div>
         </form>
     </div>

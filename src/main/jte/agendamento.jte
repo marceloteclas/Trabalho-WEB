@@ -10,10 +10,10 @@
 </head>
 <body>
     <div class="icon-top">
-        <img src="/assets/img/icon.png" alt="">
+        <img src="/img/icon.png" alt="">
     </div>
     <div class="icon-right">
-        <img src="resources/static/assets/img/icon2.png" alt="">
+        <img src="/img/icon2.png" alt="">
     </div>
     <header>
     <div class="title">AGENDAR CONSULTA</div>
@@ -45,14 +45,14 @@
 
             <button class="btn" onclick="agendarconsulta()">Agendar</button>
             <div class="button1">
-                 <input type="button" value="Voltar" onclick="window.location.href='/menu'">
+                 <input type="button" value="Voltar" onclick="window.location.href='/home'">
             </div>
         </div>
 
         
             
         <div class="image-container">
-            <img src="/assets/img/image.png" alt="Imagem de agendamento">
+            <img src="/img/image.png" alt="Imagem de agendamento">
         </div>
     </main>
 

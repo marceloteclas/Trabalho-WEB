@@ -1,21 +1,24 @@
 package com.system.clinic.dto;
 
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class UserDTO {
+public class UsuarioDTO {
 
-    @NotBlank(message = "Não pode ser vazio")
+    @NotNull(message = "Não pode ser vazio")
     @Size(min = 6, max = 50)
-    private String name;
+    private String senha;
 
-    @NotBlank
+    @NotNull(message = "Não pode ser vazio")
     @Email
     private String email;
+
+    @NotNull(message = "Não pode ser vazio")
+    private String nome;
 
 }
