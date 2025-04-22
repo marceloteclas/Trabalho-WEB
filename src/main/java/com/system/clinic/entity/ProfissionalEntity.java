@@ -1,5 +1,7 @@
 package  com.system.clinic.entity;
 
+import java.time.LocalDate;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -28,7 +30,7 @@ public class ProfissionalEntity {
 
     @NotBlank
     @Column(nullable=false)
-    private String name;
+    private String nome;
 
     @Column(name="especialidade",nullable = false)
     private String especialidade;
@@ -48,7 +50,7 @@ public class ProfissionalEntity {
         private String cpf;
 
     @Column(name="data_nascimento",nullable = false)
-    private String dataNascimento;
+    private LocalDate dataNascimento;
 
     @Email
     @Column(name = "email", nullable = false)

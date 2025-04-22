@@ -357,7 +357,7 @@ legend {
 button {
     margin-top: 20px;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #222d64;
     border: none;
     color: white;
     font-size: 16px;
@@ -366,7 +366,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #222d64;
 }
 
 .error-message {
@@ -388,14 +388,14 @@ button:hover {
 
 .container .title-page {
     text-align: center;
-    color: #4CAF50;
+    color: #325CC8;
     margin-bottom: 20px;
 }
 
 .btn-cadastrar {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #325CC8;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -405,7 +405,7 @@ button:hover {
 }
 
 .btn-cadastrar:hover {
-    background-color: #45a049;
+    background-color: #222d64;
 }
 
 .tabela {
@@ -422,7 +422,7 @@ button:hover {
 }
 
 .tabela thead {
-    background-color: #4CAF50;
+    background-color: #002AB9;
     color: white;
 }
 

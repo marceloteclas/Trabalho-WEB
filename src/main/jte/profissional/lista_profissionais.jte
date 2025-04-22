@@ -3,12 +3,10 @@
 @import java.util.List
 
 @param List<ProfissionalDTO> profissionais
-@param boolean logado
 
-@template.layout.main(logado = logado, content = @`
+@template.layout.main(content = @`
 
     <h2 class="title-page">Profissionais Cadastrados</h2>
-
     
     <a href="/cadastroProfissional" class="btn-cadastrar">+ Cadastrar Profissional</a>
 
@@ -29,22 +27,26 @@
         </thead>
 
         <tbody>
-        @for(var profissional : profissionais)
-            <tr>
-                <td>${profissional.getId()}</td>
-                <td>${profissional.getNome()}</td>
-                <td>${profissional.getEspecialidade()}</td>
-                <td>${profissional.getTelefone()}</td>
-                <td>${profissional.getCns()}</td>
-                <td>${profissional.getDataNascimento()}</td>
-                <td>${profissional.getEmail()}</td>
-               
-                <td>
-                    <a href="/veterinario/editar/${veterinario.getId()}" class="btn-editar">Editar</a>
-                </td>
+        @if(profissionais != null)    
+            @for(var profissional : profissionais)
+                <tr>
+                    <td>${profissional.getId()}</td>
+                    <td>${profissional.getNome()}</td>
+                    <td>${profissional.getEspecialidade()}</td>
+                    <td>${profissional.getTelefone()}</td>
+                    <td>${profissional.getCns()}</td>
+                    <td>${profissional.getDataNascimentoFormatada()}</td>
+                    <td>${profissional.getEmail()}</td>
                 
-            </tr>
-        @endfor
+                    <td>
+                        <a href="/profissional/editar/${profissional.getId()}" class="btn-editar">Editar</a>
+                    </td>
+                    
+                </tr>
+            @endfor
+        @else
+            <tr><td colspan="8">Nenhum profissional encontrado.</td></tr>   
+        @endif
         </tbody>
     </table>
 `)

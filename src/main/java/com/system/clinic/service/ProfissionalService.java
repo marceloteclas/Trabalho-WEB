@@ -10,11 +10,11 @@ import com.system.clinic.dto.ProfissionalDTO;
 @Service
 public interface ProfissionalService {
 
-    ProfissionalDTO findOne(Long idProfissional);
+    ProfissionalDTO findOne(Long id);
     List<ProfissionalDTO> findAll();
     List<ProfissionalDTO> ConsultarPorProfissional(String profissionalNome);
     List<ProfissionalDTO> listarProfissionalPorEspecialidade(String especialidade);
 
     ProfissionalDTO save(ProfissionalDTO profissionalDTO);
-    void remove(Long idProfissional);
+    void remove(Long id);
 }

@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class MenuController {
 
+
     @GetMapping("/menu")
     public String mostrarMenu() {
         return "index"; // JTE procura automaticamente por home.jte
@@ -24,11 +25,6 @@ public class MenuController {
     @GetMapping("/cadastroProfissional")
     public String cadastroProfissional() {
         return "profissional/cadastroProfissional";
-    }
-
-    @GetMapping("/listarProfissional")
-    public String listarProfissional() {
-        return "profissional/lista_profissional";
     }
 
     @GetMapping("/agendamento")

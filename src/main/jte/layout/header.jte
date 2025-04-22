@@ -12,8 +12,7 @@
                 <li><a href="/listarPessoa">Listar Pacientes</a></li>
                 <li><a href="/agendamento">Marcar <br> Agendamento</a></li>
                 <li><a href="/listarAgendamento">Listar Agendamento</a></li>
-                <li><a href="/cadastroProfissional">Cadastrar Profissionais</a></li>
-                <li><a href="/listarProfissional">Listar Profissionais</a></li>
+                <li><a href="/listarProfissional">Profissionais</a></li>
                 <li><a href="/logout">Logout</a></li>
             </ul>
         </nav>
