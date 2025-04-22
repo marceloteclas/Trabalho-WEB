@@ -1,8 +1,8 @@
 @import com.system.clinic.dto.PacienteDTO
 @import com.system.clinic.exception.ValidationErrorDTO
 @import java.util.List
-<!--
-@param PacienteDTO paciente = new PacienteDTO()
+
+<!--@param PacienteDTO paciente = new PacienteDTO()
 @param ValidationErrorDTO errors = new ValidationErrorDTO()
 @param boolean cadastro = false
 @param boolean edicao = false

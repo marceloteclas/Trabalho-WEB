@@ -4,9 +4,8 @@
 
 @param List<PacienteDTO> pacientes
 @param boolean erroCpf = false
-@param boolean logado
 
-@template.layout.main(logado = logado, content = @`
+@template.layout.main(content = @`
 
     <h2 class="title-page">Pacientes Cadastrados</h2>
 

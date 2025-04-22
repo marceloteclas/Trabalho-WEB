@@ -13,27 +13,31 @@ public class MenuController {
 
     @GetMapping("/cadastroPessoa")
     public String cadastroPessoa() {
-        return "cadastroPessoa";
+        return "paciente/form_cadastro_paciente";
+    }
+
+    @GetMapping("/listarPessoa")
+    public String listarPessoa() {
+        return "paciente/lista_pacientes";
     }
 
     @GetMapping("/cadastroProfissional")
     public String cadastroProfissional() {
-        return "cadastroProfissional";
-    }
-
-    @GetMapping("/agendamento")
-    public String agendamento() {
-        return "agendamento";
-    }
-
-    @GetMapping("/listarAgendamento")
-    public String listarAgendamento() {
-        return "listarAgendamento";
+        return "profissional/cadastroProfissional";
     }
 
     @GetMapping("/listarProfissional")
     public String listarProfissional() {
-        return "listarProfissional";
+        return "profissional/lista_profissional";
     }
 
+    @GetMapping("/agendamento")
+    public String agendamento() {
+        return "agendamento/form_cadastro_consulta";
+    }
+
+    @GetMapping("/listarAgendamento")
+    public String listarAgendamento() {
+        return "agendamento/lista_consultas";
+    }
 }

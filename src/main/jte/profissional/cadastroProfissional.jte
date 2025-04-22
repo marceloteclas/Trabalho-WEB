@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/cadastroProfissional.css">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <title>Cadastro de Profissional</title>
-</head>
-<body>
+@template.layout.main(content = @`
+    
     <main>
-        <div class="container">
+        <div class="profissionalcontainer">
             <div class="form-img">
                 <img class="img1" src="assets/img/Phisiotherapy-amico 1.png" alt="">
             </div>
@@ -54,5 +46,4 @@
             </div>
         </div>
     </main>  
-</body>
-</html>
+`)
