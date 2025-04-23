@@ -11,18 +11,21 @@ import com.system.clinic.dto.AgendamentoDTO;
 @Service
 public interface AgendamentoService {
 
-AgendamentoDTO buscarConsultaPorId(Long idConsulta);
-List<AgendamentoDTO> listarConsultas();
-List<AgendamentoDTO> ConsultasPorCns(String pacientecns);
-List<AgendamentoDTO> ConsultasPorProfissional(String profissionalNome);
-List<AgendamentoDTO> ConsultasPorData(LocalDate data);
-List<AgendamentoDTO> ConsultasPorEspecialidade(String especialidade);
-List<AgendamentoDTO> ConsultasPorHora(LocalTime horaConsulta);
+    AgendamentoDTO buscarConsultaPorId(Long id);
 
-AgendamentoDTO save(AgendamentoDTO consultaDTO);
-void remove(Long idConsulta);
+    List<AgendamentoDTO> listarConsultas();
 
+    List<AgendamentoDTO> ConsultasPorCns(String pacientecns);
 
+    List<AgendamentoDTO> ConsultasPorProfissional(String profissionalNome);
 
+    List<AgendamentoDTO> ConsultasPorData(LocalDate data);
 
+    List<AgendamentoDTO> ConsultasPorEspecialidade(String especialidade);
+
+    List<AgendamentoDTO> ConsultasPorHora(LocalTime horaConsulta);
+
+    AgendamentoDTO save(AgendamentoDTO consultaDTO);
+
+    void remove(Long id);
 }

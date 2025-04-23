@@ -1,4 +1,4 @@
-package com.system.clinic.mapping; 
+package com.system.clinic.mapping;
 
 import com.system.clinic.dto.AgendamentoDTO;
 import com.system.clinic.entity.AgendamentoEntity;
@@ -10,7 +10,7 @@ import org.mapstruct.Mapping;
 
 @Mapper(componentModel = "spring")
 public abstract class AgendamentoMapper {
-    
+
     @Mapping(target = "paciente", expression = "java(mapPaciente(source.getId()))")
     @Mapping(target = "profissional", expression = "java(mapProfissional(source.getId()))")
     public abstract AgendamentoEntity mapToAgendamentoEntity(AgendamentoDTO source);

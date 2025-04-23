@@ -1,6 +1,5 @@
 package com.system.clinic.entity;
 
-
 import java.time.LocalDate;
 
 import jakarta.persistence.Column;
@@ -25,7 +24,7 @@ import jakarta.validation.constraints.Past;
 public class PacienteEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)  
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotBlank
@@ -53,7 +52,7 @@ public class PacienteEntity {
     private String cns;
 
     @NotBlank
-    @Column(length = 10 )
+    @Column(length = 10)
     private String telefone;
 
     @NotBlank

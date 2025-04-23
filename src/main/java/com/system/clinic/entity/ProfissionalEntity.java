@@ -1,4 +1,6 @@
-package  com.system.clinic.entity;
+package com.system.clinic.entity;
+
+import java.time.LocalDate;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -15,9 +17,9 @@ import lombok.Data;
 @Entity
 @Data
 @AllArgsConstructor
-@Table(name="profissional")
+@Table(name = "profissional")
 public class ProfissionalEntity {
-    
+
     public ProfissionalEntity() {
         // Construtor padrão necessário para frameworks e instância manual
     }
@@ -27,10 +29,10 @@ public class ProfissionalEntity {
     private Long id;
 
     @NotBlank
-    @Column(nullable=false)
-    private String name;
+    @Column(nullable = false)
+    private String nome;
 
-    @Column(name="especialidade",nullable = false)
+    @Column(name = "especialidade", nullable = false)
     private String especialidade;
 
     @NotBlank
@@ -38,17 +40,17 @@ public class ProfissionalEntity {
     private String telefone;
 
     @NotBlank
-    @Column(name="senha",nullable = false)
+    @Column(name = "senha", nullable = false)
     private String senha;
 
-    @Column(name="cns",nullable = false)
+    @Column(name = "cns", nullable = false)
     private int cns;
-        @Pattern(regexp = "\\d{11}")
-        @Column(nullable = false, length = 11)
-        private String cpf;
+    @Pattern(regexp = "\\d{11}")
+    @Column(nullable = false, length = 11)
+    private String cpf;
 
-    @Column(name="data_nascimento",nullable = false)
-    private String dataNascimento;
+    @Column(name = "data_nascimento", nullable = false)
+    private LocalDate dataNascimento;
 
     @Email
     @Column(name = "email", nullable = false)
