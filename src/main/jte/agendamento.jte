@@ -1,17 +1,25 @@
-@template.layout.main(content = @`
-<main>
-<div class="agendamento-container">
-    <div class="agendamento-icon-top">
-        <img src="/assets/img/icon.png" alt="">
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/agendamento.css">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+   
+    <title>Agendamento</title>
+</head>
+<body>
+    <div class="icon-top">
+        <img src="/img/icon.png" alt="">
     </div>
-    <div class="agendamento-icon-right">
-        <img src="resources/static/assets/img/icon2.png" alt="">
+    <div class="icon-right">
+        <img src="/img/icon2.png" alt="">
     </div>
     <header>
     <div class="title">AGENDAR CONSULTA</div>
     </header>
     <main>
-        <div class="agendamento-form-container">
+        <div class="form-container">
             <label for="CNS">Número do CNS:</label>
             <input type="text" id="CNS" name="sus" placeholder="Digite o CNS" oninput="buscarPaciente()"> 
             <label for="search-patient">Paciente:</label>
@@ -35,16 +43,16 @@
             <label for="motivo">Motivo da Consulta:</label>
             <textarea id="motivo" name="motivo" rows="3" placeholder="Descreva o motivo da consulta"></textarea>
 
-            <button class="agendamento-btn" onclick="agendarconsulta()">Agendar</button>
-            <div class="agendamento-button1">
-                 <input type="button" value="Voltar" onclick="window.location.href='/menu'">
+            <button class="btn" onclick="agendarconsulta()">Agendar</button>
+            <div class="button1">
+                 <input type="button" value="Voltar" onclick="window.location.href='/home'">
             </div>
         </div>
 
         
             
-        <div class="agendamento-image-container">
-            <img src="/assets/img/image50.png" alt="Imagem de agendamento">
+        <div class="image-container">
+            <img src="/img/image.png" alt="Imagem de agendamento">
         </div>
     </main>
 
@@ -53,5 +61,5 @@
             alert("Função de agendar consulta ainda não implementada!");
         }
     </script>
-</div>
-`)
+</body>
+</html>

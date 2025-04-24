@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: brown;
-    background-image: url(/assets/img/imagen.png);
+    background-image: url(/img/imagen.png);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;

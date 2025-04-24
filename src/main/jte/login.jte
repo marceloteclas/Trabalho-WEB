@@ -13,7 +13,7 @@
 <body>
 
     <div class="alinharItem">
-      <img src="/assets/img/icon.png" alt="imagemicone">
+      <img src="/img/icon.png" alt="imagemicone">
     </div>
 
     <div class="login-container">
@@ -28,12 +28,12 @@
             
             <div class="espaco-input">
                 <label for="usuario">Usuário*</label>
-                <input type="text" id="usuario" name="usuario" placeholder="Digite seu nome de usuário" required /> 
+                <input type="text" id="usuario" name="username" placeholder="Digite seu nome de usuário" required /> 
             </div>
         
             <div class="espaco-input">
                 <label for="senha">Senha*</label>
-                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required />
+                <input type="password" id="senha" name="password" placeholder="Digite sua senha" required />
             </div>
         
             <div class="lembrar-me">
@@ -42,16 +42,18 @@
             </div>
         
             <button>Entrar</button>
+
+            <p>Não tem cadastro? <a href="/cadastro">Clique aqui!</a></p>
         
-            <p>Não tem cadastro? <a href="/cadastro"> Clique aqui!</a></p>
         </form>
+          
 
         <!-- Imagem -->
         <div class="image-section">
             <div class="alinharSegundaParte">
                 <div>
                 <h2>Seja Bem-Vindo</h2>
-                <img src="/assets/img/imagemLogin.png" alt="Imagem de login">
+                <img src="/img/imagemLogin.png" alt="Imagem de login">
             </div>
         </div>
     </div>
